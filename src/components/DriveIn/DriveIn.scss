@@ -1,0 +1,124 @@
+@import "../../app.scss";
+
+.drivein {
+  display: flex;
+  flex-direction: column;
+
+  .drivein-slide {
+    display: flex;
+    flex-direction: column;
+    .slide-content {
+      display: flex;
+      flex-direction: column;
+      h4 {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 163.4%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $secondary-color;
+      }
+
+      .slide-content__emoji {
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-end;
+      }
+      p {
+        font-family: $font-family;
+        font-size: 16px;
+        line-height: 163.4%;
+        letter-spacing: 0.05em;
+        color: $secondary-color;
+        opacity: 0.5;
+      }
+
+      h5 {
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 163.4%;
+        letter-spacing: 0.05em;
+        color: $secondary-color;
+      }
+
+      .slide-content__links {
+        width: 200px;
+      }
+    }
+  }
+
+  // 0-600
+  @media only screen and (max-width: $breakpoint-phone) {
+  }
+  //600-768
+  @media only screen and (min-width: $breakpoint-phone) {
+    .drivein-slide {
+      display: flex;
+      flex-direction: row;
+      .slide-content {
+        margin: 0 0 0 2rem;
+        h4 {
+          margin-top: 0;
+          font-family: $font-family;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 143.4%;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: $secondary-color;
+        }
+
+        h5 {
+          margin-right: 2rem;
+        }
+
+        p {
+          font-family: $font-family;
+          font-size: 12px;
+          line-height: 142.4%;
+          letter-spacing: 0.05em;
+          color: $secondary-color;
+          opacity: 0.5;
+        }
+
+        .slide-content__links {
+          width: 200px;
+        }
+
+        .slide-content__maps {
+          display: flex;
+        }
+      }
+    }
+  }
+  //768-992
+  @media only screen and (min-width: $breakpoint-tablet) {
+  }
+  //992 - 1200
+  @media only screen and (min-width: $breakpoint-desktop) {
+  }
+  //1200-1600
+  @media only screen and (min-width: $breakpoint-desktopXL) {
+    .drivein-slide {
+      .slide-content {
+        h4 {
+          font-size: 26px;
+          line-height: 170.4%;
+          letter-spacing: 0.05em;
+        }
+
+        p {
+          font-size: 19px;
+          line-height: 170.4%;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+  }
+  //1600-...
+  @media only screen and (min-width: $breakpoint-desktopXXL) {
+  }
+}

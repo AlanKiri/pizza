@@ -1,0 +1,144 @@
+@import "../../app.scss";
+
+.store-reccomended__element_compact {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+  width: 130px;
+  height: 170px;
+
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+
+  img {
+    height: 95px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+
+  div {
+    margin: 0.7rem 0.4rem;
+    h4 {
+      font-family: $font-family;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.04em;
+      color: $secondary-color;
+      margin: 0.2rem 0.5rem;
+    }
+
+    p {
+      font-family: $font-family;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.04em;
+      color: $additional-color;
+      margin: 0.5rem 0.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 400px) {
+    width: 170px;
+    height: 210px;
+    div {
+      margin: 0.9rem 0.8rem;
+      h4 {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  @media only screen and (min-width: 500px) {
+    width: 190px;
+    height: 230px;
+    div {
+      h4 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+  //600-768
+  @media only screen and (min-width: $breakpoint-phone) {
+    width: 170px;
+    height: 210px;
+    div {
+      margin: 1rem 0.9rem;
+      h4 {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  //768-992
+  @media only screen and (min-width: $breakpoint-tablet) {
+  }
+  //992 - 1200
+  @media only screen and (min-width: $breakpoint-desktop) {
+  }
+  //1200-1600
+  @media only screen and (min-width: $breakpoint-desktopXL) {
+  }
+  //1600-...
+  @media only screen and (min-width: $breakpoint-desktopXXL) {
+  }
+}
+
+.store-reccomended__element {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+  width: 200px;
+  height: 200px;
+
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+
+  img {
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+
+  div {
+    margin: 0.7rem 0.4rem;
+    h4 {
+      font-family: $font-family;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.08em;
+      color: $secondary-color;
+      margin: 0.2rem 0.5rem;
+    }
+
+    p {
+      font-family: $font-family;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: 0.08em;
+      color: $additional-color;
+      margin: 0.5rem 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+@import "../../app.scss";
+
+.store {
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 131.4%;
+    margin: 2rem 0;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $secondary-color;
+  }
+
+  .store-reccomended {
+    div {
+      cursor: pointer;
+    }
+    display: grid;
+    width: 100%;
+    justify-content: space-between;
+    gap: 40px 0px;
+    grid-template-columns: auto auto;
+  }
+  .store-pizzas,
+  .store-desserts,
+  .store-snacks,
+  .store-discounts,
+  .store-drinks {
+    div {
+      cursor: pointer;
+    }
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    gap: 40px 0px;
+    grid-template-columns: auto;
+  }
+
+  // 0-600
+  @media only screen and (max-width: $breakpoint-phone) {
+  }
+  //600-768
+  @media only screen and (min-width: $breakpoint-phone) {
+    .store-reccomended {
+      grid-template-columns: auto auto auto;
+    }
+    .store-pizzas,
+    .store-desserts,
+    .store-snacks,
+    .store-discounts,
+    .store-drinks {
+      grid-template-columns: auto auto auto;
+      justify-content: space-between;
+    }
+  }
+  //768-992
+  @media only screen and (min-width: $breakpoint-tablet) {
+  }
+  //992 - 1200
+  @media only screen and (min-width: $breakpoint-desktop) {
+    .store-reccomended {
+      grid-template-columns: auto auto auto auto auto;
+    }
+    .store-pizzas,
+    .store-desserts,
+    .store-snacks,
+    .store-discounts,
+    .store-drinks {
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+  //1200-1600
+  @media only screen and (min-width: $breakpoint-desktopXL) {
+    .store-reccomended {
+      grid-template-columns: auto auto auto auto auto auto;
+    }
+    .store-pizzas,
+    .store-desserts,
+    .store-snacks,
+    .store-discounts,
+    .store-drinks {
+      grid-template-columns: auto auto auto auto auto;
+    }
+  }
+  //1600-...
+  @media only screen and (min-width: $breakpoint-desktopXXL) {
+    .store-reccomended {
+      grid-template-columns: auto auto auto auto auto auto auto;
+    }
+    .store-pizzas,
+    .store-desserts,
+    .store-snacks,
+    .store-discounts,
+    .store-drinks {
+      grid-template-columns: auto auto auto auto auto auto;
+    }
+  }
+
+  @media only screen and (min-width: 2000px) {
+    .store-reccomended {
+      grid-template-columns: auto auto auto auto auto auto auto auto;
+    }
+    .store-pizzas,
+    .store-desserts,
+    .store-snacks,
+    .store-discounts,
+    .store-drinks {
+      grid-template-columns: auto auto auto auto auto auto auto;
+    }
+  }
+}

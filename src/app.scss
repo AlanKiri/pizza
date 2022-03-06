@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+$primary-color: #ffe93d;
+$secondary-color: #000000;
+$additional-color: #6f6f6f;
+$primary-color-darken: #978921;
+$font-family: "Montserrat", sans-serif;
+
+$breakpoint-phone: 600px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-desktopXL: 1200px;
+$breakpoint-desktopXXL: 1600px;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.content-padding {
+  padding: 0 0;
+}
+.content-margin {
+  margin: 0 0;
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+  .content-padding {
+    padding: 0.7rem 1.5rem;
+  }
+  .content-margin {
+    margin: 0.7rem 1.5rem;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-phone) {
+  .content-padding {
+    padding: 1rem 2rem;
+  }
+  .content-margin {
+    margin: 1rem 2rem;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-tablet) {
+  .content-padding {
+    padding: 1rem 2.5rem;
+  }
+  .content-margin {
+    margin: 1rem 2.5rem;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-desktop) {
+  .content-padding {
+    padding: 1rem 3rem;
+  }
+  .content-margin {
+    margin: 1rem 3rem;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-desktopXL) {
+  .content-padding {
+    padding: 1rem 4rem;
+  }
+  .content-margin {
+    margin: 1rem 4rem;
+  }
+
+  @media only screen and (min-width: $breakpoint-desktopXXL) {
+    .content-padding {
+      padding: 1rem 16rem;
+    }
+    .content-margin {
+      margin: 1rem 16rem;
+    }
+  }
+}
+
+iframe {
+  display: none;
+}

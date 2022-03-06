@@ -1,0 +1,41 @@
+@import "../../app.scss";
+.news-element {
+  display: flex;
+  .news-element__container {
+    display: grid;
+    justify-content: center;
+    gap: 40px 0px;
+    grid-template-columns: auto;
+  }
+
+  // 0-600
+  @media only screen and (max-width: $breakpoint-phone) {
+  }
+  //600-768
+  @media only screen and (min-width: $breakpoint-phone) {
+  }
+  //768-992
+  @media only screen and (min-width: $breakpoint-tablet) {
+    .news-element__container {
+      justify-content: center;
+      grid-template-columns: auto auto;
+    }
+  }
+  //992 - 1200
+  @media only screen and (min-width: $breakpoint-desktop) {
+  }
+  //1200-1600
+  @media only screen and (min-width: $breakpoint-desktopXL) {
+    .news-element__container {
+      justify-content: center;
+      grid-template-columns: auto auto auto;
+    }
+  }
+  //1600-...
+  @media only screen and (min-width: $breakpoint-desktopXXL) {
+    .news-element__container {
+      justify-content: center;
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+}
