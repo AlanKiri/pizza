@@ -1,10 +1,12 @@
 import React from "react";
 import "./FoodNavbar.scss";
-import Cart from "../../assets/cart.svg";
 const FoodNavbar = () => {
   return (
-    <div className="food content-margin">
+    <div className="food content-padding">
       <div className="food-menu">
+        <p>
+          <a href="#reccomended">Rekomendacijos</a>
+        </p>
         <p>
           <a href="#pizzas">Picos</a>
         </p>
@@ -21,11 +23,7 @@ const FoodNavbar = () => {
           <a href="#discounts">Akcijos</a>
         </p>
       </div>
-      <div className="food-checkout">
-        <div className="food-checkout__button">
-          <img src={Cart} alt="" />
-        </div>
-      </div>
+      <div className="food-checkout"></div>
     </div>
   );
 };

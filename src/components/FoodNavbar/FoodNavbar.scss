@@ -3,26 +3,15 @@
 .food {
   display: flex;
   overflow: auto;
+  position: sticky;
+  top: 0;
+  background-color: white;
   justify-content: space-between;
   white-space: nowrap;
   align-items: center;
   padding: 1rem 0rem;
   & > div {
     margin: 0 0.5rem;
-  }
-
-  .food-checkout {
-    display: none;
-    .food-checkout__button {
-      img {
-        cursor: pointer;
-
-        &:hover {
-          transform: scale(1.05);
-          transition: transform 0.3s;
-        }
-      }
-    }
   }
 
   .food-menu {

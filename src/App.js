@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, Drive, News, Catalog, NotFound } from "./pages";
 import "./app.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
